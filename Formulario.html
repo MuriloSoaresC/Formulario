@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu cadastro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Montserrat:wght@100&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+    <h1>Faça seu cadastro</h1>
+    <main>
+        <form action="">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" class="input" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="input" required placeholder="seuemail@dominio.com"
+                pattern="^([a-zA-Z0-9._:$!%-]+@[a-zA-z0-9.-]+.[com])$" title="O email deve conter @ e .com">
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" class="input" required minlength="6">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input" required placeholder="(00)00000-0000">
+
+            <button type="submit" class="cadastrar">Cadastrar</button>
+        </form>
+    </main>
+    <script type="text/javascript">
+        $("#telefone").mask("(00) 00000-0000");
+    </script>
+</body>
+
+</html>
