@@ -33,14 +33,11 @@ form label {
     margin-top: 10px;
 }
 
-form input {
-    margin-bottom: 10px;
-}
-
 .input {
     margin-bottom: 20px;
     padding: 10px 25px;
     width: 35%;
+    border-radius: 20px;
 }
 
 .cadastrar {
