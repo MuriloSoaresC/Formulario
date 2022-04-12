@@ -15,7 +15,7 @@ main {
 }
 
 form {
-    background-image: linear-gradient(rgb(136, 207, 136), rgb(89, 179, 89));
+    background: linear-gradient(rgb(136, 207, 136), rgb(89, 179, 89));
     display: flex;
     justify-content: space-around;
     align-items: center;
